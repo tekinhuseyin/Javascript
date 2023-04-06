@@ -1,21 +1,30 @@
 //!  %%%%%%%%%%% DEĞİŞKEN TANIMLAMA  %%%%%%%%%%%%%%%%
+
 //  CONST ve LET, ECMASCRIPT6 ile gelmiştir. VAR eski versiyonlardan beri bulunmaktadır.
+
 // ===================  CONST  ======================
 // ? const ve let Modern JS ile gelmiş yeni değişken tanımlama keyword'leridir.
 // ! CONST: Sadece başlangıçta değer atanabilir.
 // ! Sonradan değeri değiştirilemez (non-primitive'ler (array..) hariç).
+
 const yas=25;
+
 console.log(yas);
+
 console.log(typeof yas);
-// yas=30;
-// ! hata const ile tanimlanana degisken degistirilemez
+
+//  yas=30;
+//! hata const ile tanımlanan değişken değiştirilemez
+
 // const pi;
-// ! const degiskenine baslangic atamasi yapmak zorunlu
+//! const değişkenine başlangıç ataması yapmak zorunlu
+
 const isTrue=true;
 console.log(typeof isTrue);
-const dolar=1.5;
-console.log(typeof dolar)
 
+const dolar=1.5;
+
+console.log(typeof dolar);
 
 
 // ======================  LET  ========================
@@ -25,11 +34,10 @@ console.log(typeof dolar)
 //? CONST kullanamadığımız durumlarda (değişkenin değeri sürekli değişecekse) LET kullanmalıyız.
 
 let dil="javascript";
-
-dil="java";
+ dil="java";
 console.log(dil);
 
-dil = true;
+dil =true;
 
 console.log(typeof dil);
 
@@ -40,13 +48,11 @@ console.log(7+sayi);
 let sayi1="5";
 
 console.log(7+sayi1);
-
 //! bir string ile number toplanırsa aslında toplama yapmaz, onları iki kelime gibi yanyana yazar
 
 isim="ipek";
 console.log(typeof isim);
 //! değişken tanımlama keyword u kullanmasak bile JS derleyicisi otomatik  onu "var" olarak tanımlar
-
 
 
 // ===================  VAR VERİ TİPİ ===============================
@@ -56,18 +62,20 @@ console.log(typeof isim);
 //? - Eğer, değişken fonksiyonların dışında tanımlandı ise tüm her yerden erişilebilir. (Global-scoped).
 //! Günümüzde programcılar global değişken gerekmedikçe VAR ile değişken tanımlamayı seçmemektedir.
 
+
 var sayi2=5;
 
 sayi2=10;
 console.log(sayi2);
 
-console.log("**************************");
-
+console.log("*********************************************");
 
 var ilk="GLOBAL";
+
 console.log(ilk);
 
 {
+
     console.log(ilk);
 
     ilk="degistim"
@@ -78,16 +86,14 @@ console.log(ilk);
 }
 
 console.log(ilk);
-
-console.log("ikinci");
+console.log(ikinci);
 
 //! var keyword ü kullanılınca blok içerisinde ve dışarısında erişebiliriz. blok içinde tanımlanan değişkene dışardan da erişebiliriz
 
-console.log("******************************");
+console.log("*******************************");
 
 let first="osman";
 console.log(first);
-
 
 {
     console.log(first);
@@ -95,15 +101,15 @@ console.log(first);
     first="hüseyin"
     console.log(first);
 
-    let second="emirhan"
+
+    let second="halit"
     console.log(second);
 }
 
-// console.log(second); bloktaki elamana disaridan erisemeyiz (const ve let icin)
-
+// console.log(second); block taki elemana dışarıdan erişemeyiz (const ve let için)
 console.log(first);
 
-//! LET TEKI AYNI ISLEMLERI CONST ICINDE YAPTIK
+//! LET TEKİ AYNI İŞLEMLERİ CONST İÇİNDE YAPTIK
 
 const erste="nihal"
 console.log(erste);
@@ -115,12 +121,6 @@ console.log(erste);
 const zweite="özlem"
 console.log(zweite);
 }
-
 console.log(zweite);
 
-// const ve let icin scope icinde olan scope (süslü) icinde kalir
-
-
-
-
-
+// const ve let için scope içinde olan scope (süslü) içinde kalır
