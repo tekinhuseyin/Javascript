@@ -2,20 +2,35 @@
 // ?                   FONKSİYONLAR-SCOPE
 // ? ==========================================================
 console.log("************ 4- SCOPE *************");
-//! global scope
-// fonksiyonlar disarda yazilan degisikliklere erisebilir. if ve forlarda icerdekine disarda ulasmak icin disariya bir degisken tanimak gerekiyor ama icerde yeni bir degisken tanimlarsak ona disardan erisemiyoruz fakat  fonksiyonda returnle ulasabiliyoruz.
+
+//!global scope
+
 let birinci=5;
 let ikinci=12;
-let ücüncü=123;
-console.log(birinci, ikinci, ücüncü);
-const scopeDeneme=function() {
+let ucuncu=123;
+
+console.log(birinci, ikinci, ucuncu);
+
+const scopeDeneme=function(){
+
 birinci=8;
+
+// yeni bir ikinci oluşturdu ve dışarıdan erişilemez hale geldi
 let ikinci=45
 console.log(ikinci);
-let dorduncu=1234
-// return dorduncu yazilir fonsiyon disina da console.log(scopeDeneme); boylece dorduncu dönmüs olur
+
+
+  let dorduncu=1234
+ 
+ return dorduncu
+// return dorduncu => yazılır fonksiyon dışına dorduncu yandaki gibi yazarsak dönmüş olur=>  console.log(scopeDeneme())=1234
+
 }
-scopeDeneme()
-console.log(birinci);
+
+
+console.log(birinci);//8
 console.log(ikinci);
-console.log(dorduncu);
+//  console.log(dorduncu);
+  alert(scopeDeneme())
+
+  console.log(ucuncu);
