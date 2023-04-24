@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .images{
+            width: 500px;
+            height: 500px;
+            border: brown solid 3px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .buton{
+            text-align: center;
+            margin-top: 20px;
+
+
+                
+    font-size: 1rem;
+    cursor: pointer;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>EXAMPLES</h1>
+<div class="container"> 
+
+        <img class="images" src="./image/img2.jpg" onmouseover="this.src='./image/aslan1.jpeg'" onmouseout="this.src='./image/aslan2.jpeg'" />
+
+        
+</div>         
+
+ 
+<div class="buton">
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+
+
+
+
+
+
+
+
+        <audio id="myAudio">
+  <source src="./image/retro-ringtone .mp3" type="audio/ogg">
+  <source src="./image/retro-ringtone .mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+
+<button onclick="playAudio()" type="button">Call</button>
+<button onclick="pauseAudio()" type="button">Connect</button> 
+
+<button>Talk</button>#
+7ä
+öö+ ,mmmmmmm, 
+
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <button id="show-image-button">Show Image</button>
+   <img id="my-image" src="https://media.tenor.com/UdEaZ4uobC8AAAAM/waiting-patiently.gif" style="display: none;">
+   <script>
+      const showImageButton = document.getElementById("show-image-button");
+      const myImage = document.getElementById("my-image"); 
+      showImageButton.addEventListener("click", () => { 
+         myImage.style.display = "block"; 
+      });
+   </script>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+    <script src="05-assigment.js"></script>
+</body>
+</html>
