@@ -167,6 +167,7 @@ function hesaplaTotal() {
     0
   );
 
+  
   document.querySelector(".aratoplam").textContent = araToplam;
   document.querySelector(".vergi").textContent = (araToplam * 0.18).toFixed(2);
   // document.querySelector(".kargo").textContent=araToplam > 0 ? kargo: 0
